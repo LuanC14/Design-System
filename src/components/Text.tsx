@@ -9,8 +9,7 @@ import { ReactNode } from 'react';
     className?: string;
 }
 
-// Foi definido que o tamanho padrão, caso não seja definido, como 'medium'.
-// Dando ao CLSX a Condição de tamanhos do padrão dado pelo Tailwind para os definidos pelos Tokens trazidos do Figma.
+
 export function Text({ size = 'md', children, asChild, className }: TextProps) {
     
     const Comp = asChild ? Slot : 'span'

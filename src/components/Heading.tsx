@@ -10,8 +10,7 @@ export interface HeadingProps {
     className?: string;
 }
 
-// Foi definido que o tamanho padrão, caso não seja definido, como 'medium'.
-// Dando ao CLSX a Condição de tamanhos do padrão dado pelo Tailwind para os definidos pelos Tokens trazidos do Figma.
+
 export function Heading({ size = 'md', children, asChild, className }: HeadingProps) {
 
     const Comp = asChild ? Slot : 'h2'
